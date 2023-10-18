@@ -65,3 +65,19 @@
     git checkout  BranchName
 ```
 
+
+# -------------------- TAG ---------------------------
+
+## Tag commit already done with a version name (v1.0), when pushing will be uploaded automatically
+```bash
+    git tag V1.0 (for exemple)
+```
+
+# -------------------- PRIVACY CONTROL (DO NOT INSERT FILES IN REPOSITORY) ---------------------------
+
+Create a .gitignore with each file to do not include in a line
+All files starting with a --> a*
+All files ending with jpg --> *.png
+All files in a folder --> FolderName/
+
+
