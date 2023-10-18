@@ -1,6 +1,6 @@
 # Commands 
 
-## Pull get the latest version of the project
+## Pull get the latest version of the project (will do the pull of the all the branches)
 ```bash
     git pull
 ```
@@ -15,7 +15,7 @@
     git commit -a -m "message"
 ```
 
-## Push push the changes to the remote repository
+## Push push the changes to the remote repository (push only of the branch you are in, if does not exist in production will ask to create it)
 ```bash
     git push
 ```
@@ -65,10 +65,20 @@
     git checkout  BranchName
 ```
 
+## Merge current branch with other branches (se when addign fucntionalities to master, move there and do merge) CNTRL SHIFT M
+```bash
+    git merge  BranchName
+```
+
+## See all branches
+```bash
+    git branch
+```
+
 
 # -------------------- TAG ---------------------------
 
-## Tag commit already done with a version name (v1.0), when pushing will be uploaded automatically
+## Tag commit already done with a version name (v1.0), when pushing will be uploaded automatically. Usually done in master
 ```bash
     git tag V1.0 (for exemple)
 ```
@@ -80,4 +90,12 @@ All files starting with a --> a*
 All files ending with jpg --> *.png
 All files in a folder --> FolderName/
 
+# -------------------- GIT FLOW ---------------------------
 
+READ http://datasift.github.io/gitflow/IntroducingGitFlow.html
+
+
+# ------------------------CI / CD---------------------------
+It is possible to have automatisms to upload a project to production.
+Automation tests to check web will be OK at production
+Github actions to do some automativ actions that need to be done always when uploading the project to production (python manage.py etc)
